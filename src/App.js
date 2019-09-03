@@ -9,7 +9,7 @@ class App extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      logined: true, // 임시
+      logined: false, // 임시
       userName: "Guest"
     }
   }

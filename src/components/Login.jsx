@@ -13,11 +13,13 @@ class Login extends Component {
     this.setState({ userName: e.target.value });
   }
 
-  onLogin = () => { 
-    if(this.state.userName == null || this.state.userName == "")
+  onLogin = (guest = false) => { 
+    let userName = guest ? "Guest" : this.state.userName;
+
+    if(userName == null || userName == "")
       return alert("이름을 입력하세요");
       
-    this.props.login(this.state.userName);
+    this.props.login(userName);
   }
 
   onKeyDownLogin = (e) => { if(e.keyCode == 13) this.onLogin(); }
@@ -37,8 +39,13 @@ class Login extends Component {
         ></input>
         <button
           className="userNameInputButton"
-          onClick={this.onLogin}
+          onClick={() => this.onLogin(false)}
         >Login</button>
+
+        <button
+          className="userNameInputButton"
+          onClick={() => this.onLogin(true)}
+        >Guest Login</button>
       </div>
     );
   }
