@@ -1,0 +1,75 @@
+.ProtocolItem {
+    margin: 30px 0;
+    padding-bottom: 3px;
+    min-width: 600px;
+    cursor: pointer;
+    transition-duration: .2s;
+    border-radius: 5px 5px 0 0;
+    overflow: hidden;
+    background: rgb(120, 220, 140);
+    box-sizing: border-box;
+    border: 1px solid rgba(255, 255, 255, .7);
+}
+.GETItem { background: rgb(234, 67, 53); }
+.POSTItem { background: rgb(251, 188, 5); }
+.SocketItem { background: rgb(66, 133, 244); }
+
+.ProtocolItem:hover {
+    box-shadow: 2px 2px 7px 1px rgba(0, 0, 0, .1);
+}
+
+.ProtocolItem > .itemInfoTop {
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    height: 50px;
+}
+
+.ProtocolItem > .itemInfoTop > h3 {
+    padding: 0 20px;
+    align-self: center;
+    color: #fff;
+}
+
+.ProtocolItem > .itemInfoTop > .protocol {
+    padding: 0 20px;
+    align-self: center;
+    font-weight: bold;
+    font-size: 20px;
+    color: #fff;
+}
+
+.ProtocolItem > .itemInfoBottom {
+    padding: 5px 0;
+    background: rgba(255, 255, 255, .8);
+}
+
+.ProtocolItem > .itemInfoBottom > .simpleExample {
+    padding: 3px 0;
+    text-indent: 20px;
+    text-align: left;
+    font-size: 13px;
+    color: #888;
+}
+
+.ProtocolItem > .itemInfoBottom > .simpleInfo {
+    display: block;
+    padding: 3px 0;
+    text-indent: 20px;
+    text-align: left;
+    font-size: 14px;
+}
+
+.ProtocolItem > .itemDetailInfo {
+    display: block;
+    padding: 0px 0;
+    height: 0;
+    background: rgba(255, 255, 255, .8);
+    box-shadow: inset 0px 0px 20px 5px rgba(100, 100, 100, .1);
+    overflow: hidden;
+}
+
+.ProtocolItem > .activeDetailInfo {
+    padding: 20px 0;
+    height: auto;
+}

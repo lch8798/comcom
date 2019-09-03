@@ -1,0 +1,10 @@
+.Body {
+    padding-top: 60px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.Body > .itemList {
+    max-width: 1000px;
+}

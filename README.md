@@ -1,2 +1,2 @@
-# comcom
-Protocols Community
+# ComCom
+통신 커뮤니티
